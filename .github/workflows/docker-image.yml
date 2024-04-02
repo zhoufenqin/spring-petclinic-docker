@@ -12,3 +12,5 @@ jobs:
     steps:
     - name: Azure Container Apps Build and Deploy
       uses: Azure/container-apps-deploy-action@v2
+      with:
+        appSourcePath: ${{ github.workspace }}
